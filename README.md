@@ -25,5 +25,22 @@
 - git remote add origin
 -git remote -v: kiểm tra chúng ta đang ở đâu
 - git log giúp xem lịch sử commit
+# vite
+npx vite
+# biên dịch file scss -> css
+  [INPUT]                    [OUTPUT]
+sass src/scss/index.scss dist/index.css
 
+npx sass src/scss/index.scss dist/index.css --watch: tự động biên dịch qua css
+# Thư mục public
+- chứa file static: images, font, audios, icons
 
+# 2 dev a-b
+npm i: cài tất cả thư viện trong dự án
+1.10.0 <version> 1.10.10
+dev a: cài version 1.10.2
+dev b: cài version 1.10.3
+
+# file scss: bắt đầu bằng dấu "_"
+- file đó sẽ không được biên dịch  tất cả, trừ những cái nào được tái sử dụng ở nơi khác
+- Thường dùng để khai báo biến, mixin.
